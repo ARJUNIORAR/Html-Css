@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*Seletores personalizados
+        # = id
+        . = class
+        : = pseudoclasse
+        :: pseudoelement
+        > = Clildren(Filhos)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Função abaixo colore o link e retira o sublinhado do texto. font-weight serve para colocar em negrito*/
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Essa função abaixo serve para mudar a cor dos links visitados*/
+        a:visited{
+            color:darkred;
+        }
+        /*Função abaixo colocar a sublinhação e a cor preta quando clica no botão, isso é possivel utilizando o hover*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            
+        }
+        /*Função abaixo deixa o link em amarelo quando foi clicado*/
+        a:active{
+            color: yellow;
+        }
+        /*Função abaixo coloca esse nome link a frente do nome com a*/
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank">
+            <li>Repositorio GitHub</li>
+        </a>
+        <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">
+            <li>Canal do YouTube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com/" target="_blank">
+            <li>Site do CursoemVideo</li>
+        </a>
+    </ul>
+</body>
+</html>

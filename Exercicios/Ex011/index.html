@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismete aumente e diminua o tamanho do seu navegador. </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexivel"> <!--Configuração acima com souce server para adpatar a imagem de acordo com o tamanho da tela do site, lebrando que a ordem tem que ser como está-->
+    </picture>
+    <h1>Reproduzindo Àudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/hungriahiphop-amor-e-fe-a4c807bb.mp3" controls autoplay></audio> <!--Utilizando a tag audio e inserindo dentro da ide vou precisar usar o parametro controls(para mostrar o player do audio na pagina) e autoplay para tocar.-->
+    <!--Formatos disponiveis são MP3, WAV OGG-->
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/musicayutube.mp3" type="audio/mpeg">
+        <source src="midia/musicayutube.mp3" type="audio/ogg">
+        <source src="midia/musicayutube.mp3" type="audio/wav">
+        <!--Sourc acima é para carregar todos os tipos de arquivos selecionados utilizando o type. no caso é outra forma de inserir o audio. Caso queira recomeçar o audio colocar loop-->
+        <p>Infelizmente o seu navegador não consegue reproduzir audio. <a href="midia/hungriahiphop-amor-e-fe-a4c807bb.mp3">Clique aqui para baxar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

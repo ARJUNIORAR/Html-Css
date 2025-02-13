@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos gravados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meuvideoweb.webm" width="500" controls loop></video> <!--O Width serve ára reduzir a vizualização na pagina e o controls para da player no video loop para o video reiniciar-->
+    <video width="500" poster="imagens/Designer.png" controls>
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/meuvideomp4.mp4" type="video/mp4">
+        <source src="midia/meuvideoweb.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com o videos. </p>
+        <!--Source para definir o tipo de video e fazer com que se o navegador não carregar um tipo vá para o outro abaixo. o poster coloca a tube(foto de inicio do video)-->
+    </video>
+    <h1>Inserindo videos do yutube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=B2T5OniASmY35xPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=qMBwAo9kfFb69ek7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--A forma acima insere videos do yutube dentro do meu site. para inserir devo ir dentro do yutube e clicar em compartilhar, e no botão imcorporar e utilizar o codigo que disponibilizam-->
+    <h1>Inserindo videos do vimeo</h1>
+    <div style="padding:30.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/265242392?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <!--Para diminuir o tamanho tem que mexer no padding-->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            /*Por padrão o h1 é box-level, seu eu quiser transformar em inline posso colocar o display como abaixo*/
+            display: inline;
+
+
+            background-color: azure;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;     Essa é a forma de detalhar, abaixo simplifico.*/
+
+            border:10px solid black; /*Forma: de simplificar os comandos para borda os mesmos comandos podem ser simplificados com essa forma, se chama short hand.*/
+
+            padding-top: 10px; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+            padding-right:10px;
+            padding-left: 10px;
+            padding-bottom:10px
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*Forma acima utiliza a margem para mover a caixa de forma manual, se eu quiser centralizar automaticamente utilizo margin-auto*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*Forma acima serve para criar os tracejados da caixa dessa pagina.*/
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixa inline-level</a> vamos ver como funciona.</p>
+</body>
+</html>
