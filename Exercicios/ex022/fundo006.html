@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; /*Esse backgroud serve para configurar o fundo, scrool faz a imagem rolar junto do fundo, já fixed faz apenas o coneteudo rolar */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
 
         }
+        /*Shorthand - backgroud 
+        Ordem: Color > image > position > repeat > [size] 
+        attachment
+        */
         main{
             background-color: aliceblue;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,6 +37,7 @@
         <h1>Teste de Imagem de fundo</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A vero ab inventore modi quod nihil aspernatur ea accusamus eius veritatis impedit doloribus deleniti, laborum delectus facilis quisquam. Impedit, et molestiae.
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptate minima itaque aspernatur, amet, adipisci a magnam voluptatem corrupti libero ea corporis harum? Ex doloribus quasi incidunt sed aperiam. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis officia animi, minus veniam fugiat recusandae necessitatibus autem eum quidem accusamus facilis adipisci velit nisi, nostrum culpa quos dicta eligendi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam ab veritatis repudiandae error officiis? Ipsum autem modi voluptatibus, voluptates, adipisci doloremque qui, recusandae magnam eos iusto officiis voluptatem dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad iusto sunt eaque voluptate similique, nulla perferendis nihil minima impedit excepturi saepe nisi modi vero et cum tenetur repudiandae id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab vitae omnis magnam, debitis, esse et veniam labore exercitationem temporibus iusto qui, illo fuga magni molestias cumque sed sit a reprehenderit.
         </p>
 
     </main>
