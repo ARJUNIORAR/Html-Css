@@ -26,3 +26,100 @@ SEGUNDA 14/04/2025
 (continuar com todos os dias e registros)
 
 Observação: Por favor, confirme o último número utilizado na semana anterior (122) antes de começar a numeração e mantenha a sequência correta.-->
+
+
+
+
+
+<!--tamplete sugerido pela IA
+Template para Coletar Dados (copie e preencha)
+SEGUNDA 14/04/2025
+ENCERRANDO
+*1*. SM: Descrição do atendimento para [perfil]
+*2*. QUIPAPÁ: Descrição do atendimento [Gerou card IES-XXXX?]
+*3*. BAYEUX: Descrição do atendimento para [perfil]
+...
+(adicione quantos registros necessários)
+
+TERÇA 15/04/2025
+ENCERRANDO
+*1*. CIDADE: Descrição [detalhes] para [perfil]
+...
+
+(repetir para todos os dias úteis)
+
+Indicadores importantes:
+
+[Gerou card IES-XXXX] → adicione quando houver
+
+(resolvido) ou (não resolvido) → ao final de cada descrição
+
+@menção → se envolver outro responsável
+
+Prompt Completo para Gerar a Tabela
+
+
+Crie uma tabela HTML com CSS incorporado para registrar atendimentos da semana 14/04 a 18/04, seguindo ESTRITAMENTE o padrão da tabela anterior. 
+
+**Instruções técnicas:**  
+1. Estrutura:  
+   - HTML completo (doctype, html, head com meta tags, body)  
+   - CSS idêntico (mesmas classes: .card-ies, .resolvido-sim, .resolvido-nao, etc.)  
+   - Tabela com 8 colunas: Data, Nº, Cidade, Perfil, Descrição, Gerou Card, Resolvido, Responsável  
+
+2. Formatação:  
+   - Cidades em negrito (classe .cidade)  
+   - Cards IES com fundo azul (#E6F7FF)  
+   - Resolvido (✔ verde) / Não resolvido (✖ vermelho)  
+   - Cabeçalho de dia com rowspan cobrindo todos os registros (ex: <td class="data-header" rowspan="20">SEGUNDA<br>14/04/2025</td>)  
+
+3. Dados:  
+   - Numeração CONTÍNUA a partir do último registro (iniciar em 123)  
+   - Use os dados que vou fornecer abaixo, organizados por dia no formato:  
+     `*Nº*. CIDADE: Descrição [Card IES-XXX] (status) para [perfil]`  
+
+4. Dados da semana (exemplo):  
+   **SEGUNDA 14/04/2025**  
+   *1*. SM: Orientei sobre registro de aulas [Card IES-2652] (resolvido) para Secretaria  
+   *2*. BAYEUX: Professor não consegue acessar diário (não resolvido) para Professor  
+   ...  
+
+**Solicito:**  
+- Confirme o número inicial (123) antes de gerar  
+- Mantenha responsável como "Júnior Araújo" padrão  
+- Adicione "*Boa noite a todos*" ao final de cada dia  
+- Inclua comentários HTML 
+
+
+
+<!-- SEGUNDA 14/04/2025 -->
+<!--<tr>
+    <td class="data-header" rowspan="15">SEGUNDA<br>14/04/2025</td>
+    <td>123</td>
+    <td class="cidade">SM</td>
+    <td>Secretaria</td>
+    <td>Orientei sobre registro de aulas</td>
+    <td class="resolvido-sim">Sim</td>
+    <td class="resolvido-sim">Sim</td>
+    <td>Júnior Araújo</td>
+  </tr>
+  <tr class="card-ies">
+    <td>124</td>
+    <td class="cidade">BAYEUX</td>
+    <td>Professor</td>
+    <td>Problema com acesso ao diário</td>
+    <td>Não</td>
+    <td class="resolvido-nao">Não</td>
+    <td>Júnior Araújo</td>
+  </tr>
+  ...
+  <!-- TERÇA 15/04/2025 -->
+  <tr>
+    <td class="data-header" rowspan="10">TERÇA<br>15/04/2025</td>
+    <td>138</td>
+    ...
+  </tr>
+<!-- TERÇA 15/04 --> entre os dias  -->
+
+
+<!--"Por favor, gere a tabela conforme o modelo de 07/04 a 10/04, usando os novos dados abaixo:" e cole o template preenchido.-->
